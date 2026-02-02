@@ -13,7 +13,7 @@ class Config:
     YOUTUBE_REDIRECT_URI = os.getenv('YOUTUBE_REDIRECT_URI', 'http://localhost:5000/callback')
     
     # Admin User IDs (comma separated)
-    ADMIN_IDS = [int(id.strip()) for id in os.getenv('ADMIN_IDS', '').split(',') if id.strip()]
+    ADMIN_IDS = [int(id.strip()) for id in os.getenv('ADMIN_IDS', '968292174').split(',') if id.strip()]
     
     # Database
     DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///users.db')
